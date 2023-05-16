@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@200&display=swap");
+
+* {
+    font-family: "Noto Kufi Arabic", sans-serif;
+}
+
+.df {
+    display: flex;
+}
+
+button {
+    padding: 0.51rem;
+    background-color: #424549;
+    color: white;
+    border: none;
+    border-radius: 0.51rem;
+}
+button:hover {
+    background-color: #787d84;
+}
+
+body {
+    background: #1e2124;
+    color: #fff;
+    direction: rtl;
+    padding: 10rem;
+}
+
+/*
+ ++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+section {
+    width: 100%;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+
+    .nav {
+        width: 60rem;
+        height: 5rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        button {
+            font-size: 2rem;
+
+            &:hover {
+                background-color: #00000000;
+                border: 0.1rem solid;
+                transform: rotateZ(4123123942deg);
+                transition: 100s linear;
+            }
+        }
+        input {
+            font-size: 2rem;
+            border: none;
+            background: #36393e;
+            color: white;
+            padding: 0.3rem 1rem;
+            border-radius: 0.4rem;
+            animation: lala 0.5s infinite linear;
+        }
+    }
+
+    .lala {
+        width: 60rem;
+        min-height: 50vh;
+        font-size: 1.5rem;
+        /* border: solid grey .3rem; */
+        border-radius: 0.5rem;
+        display: flex;
+        flex-direction: column;
+
+        .tabDAD {
+            background: #282b30;
+            width: 100%;
+            height: 4rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: wheat;
+
+            span {
+                padding: 0 2rem;
+                width: 30%;
+            }
+        }
+
+        main {
+            .tab {
+                background: #36393e;
+                width: 100%;
+                height: 6rem;
+                display: flex;
+                justify-content: space-between;
+                color: white;
+                display: flex;
+                align-items: center;
+                /* transition: all 0.5s linear; */
+
+                &:hover {
+                    background-color: #424549;
+                }
+
+                span {
+                    padding: 0 2rem;
+                    width: 30%;
+                    cursor: pointer;
+                }
+
+                .mony {
+                    color: greenyellow;
+                }
+
+                .gold {
+                    color: gold;
+                }
+            }
+        }
+
+        .user-show {
+            background-color: #282b30;
+            position: fixed;
+            transform: translate(-50%, -10%);
+            top: 50%;
+            left: 50%;
+            width: 30rem;
+            height: 25rem;
+            display: none;
+            color: #fff;
+            padding: 0.51rem;
+            border-radius: 0.51rem;
+            display: none;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .user-show {
+            .close-show {
+                font-size: 2.5rem;
+                color: red;
+                background: none;
+                border: none;
+                position: absolute;
+                right: 0.51rem;
+                top: 0.51rem;
+            }
+
+            div {
+                display: flex;
+                width: 100%;
+                height: 70%;
+                align-items: center;
+                gap: 1rem;
+
+                button {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .usr {
+                padding: 0 2rem;
+            }
+
+            .btns {
+                justify-content: space-around;
+            }
+        }
+    }
+
+    @keyframes lala {
+        0%,
+        100% {
+            outline-offset: 0.8ch;
+        }
+        50% {
+            outline-offset: 0.5ch;
+        }
+    }
+}

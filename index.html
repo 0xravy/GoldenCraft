@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>GoldenCraft</title>
+        <link
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./src/styles/index.css" />
+        <script defer src="./src/scripts/index.js"></script>
+    </head>
+    <body>
+        <!-- <img class="background" src="https://media.tenor.com/F1B6EL-8HJkAAAAd/wallpaper-aesthetic.gif" alt=""> -->
+        <section id="home" class="df">
+            <h1>صفحة العملاء</h1>
+
+            <h2>ادفع 200 جنيه على كل 1kg من الذهب يا وصخ ولا اهكرك</h2>
+
+            <div class="nav">
+                <button id="addUser" type="">اضافة عميل جديد</button>
+                <input type="" name="" value="" placeholder="البحث" />
+            </div>
+
+            <div class="lala">
+                <div class="tabDAD">
+                    <span>العملاء</span>
+                    <span>الذهب الي عليه</span>
+                    <span>الاجور الي عليه</span>
+                </div>
+                <main id="main"></main>
+                <div id="user-show" class="user-show">
+                    <button
+                        class="close-show"
+                        onclick="document.getElementById('user-show').style.display = 'none'"
+                    >
+                        <i class="bx bx-exit"></i>
+                    </button>
+
+                    <div class="usr">
+                        <h2>عميل جديد</h2>
+                        <button id="changeName" style="font-size: 1rem">تغير الاسم</button>
+                    </div>
+
+                    <div class="btns">
+                        <button data-id="invoices" onclick="changePage(this)">
+                            اظهار الفواتير
+                        </button>
+                        <button data-id="bonds" onclick="changePage(this)">
+                            اظهار السندات
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="invoices" class="">
+            <button
+                data-id="home"
+                style="
+                    position: absolute;
+                    top: 3rem;
+                    right: 4rem;
+                    font-size: 2rem;
+                    padding: 1rem;
+                "
+                onclick="changePage(this)"
+            >
+                الرئيسية
+            </button>
+            <h1>صفحة الفواتير</h1>
+
+            <h2>ادفع 200 جنيه على كل 1kg من الذهب يا وصخ ولا اهكرك</h2>
+
+            <div class="nav">
+                <button id="addUser" type="">اضافة عميل جديد</button>
+                <input type="" name="" value="" placeholder="البحث" />
+            </div>
+
+            <div class="lala">
+                <div class="tabDAD">
+                    <span>رقم</span>
+                    <span>الذهب الي عليه</span>
+                    <span>الاجور الي عليه</span>
+                    <span>التاريخ</span>
+                </div>
+                <main id="main">
+                    <div class="tab">
+                        <span class="user">5</span>
+                        <span class="mony">8923</span>
+                        <span class="gold">534</span>
+                        <span class="time">1444/9/2</span>
+                    </div>
+                    <div class="tab">
+                        <span class="user">4</span>
+                        <span class="mony">8923</span>
+                        <span class="gold">534</span>
+                        <span class="time">1444/9/2</span>
+                    </div>
+                    <div class="tab">
+                        <span class="user">1</span>
+                        <span class="mony">8923</span>
+                        <span class="gold">534</span>
+                        <span class="time">1444/9/2</span>
+                    </div>
+                    <div class="tab">
+                        <span class="user">8</span>
+                        <span class="mony">8923</span>
+                        <span class="gold">534</span>
+                        <span class="time">1444/9/2</span>
+                    </div>
+                </main>
+            </div>
+        </section>
+
+        <section id="bonds" class="">
+            <button
+                data-id="home"
+                style="
+                    position: absolute;
+                    top: 3rem;
+                    right: 4rem;
+                    font-size: 2rem;
+                    padding: 1rem;
+                "
+                onclick="changePage(this)"
+            >
+                الرئيسية
+            </button>
+            <h1>صفحة السندات</h1>
+
+            <h2>ادفع 200 جنيه على كل 1kg من الذهب يا وصخ ولا اهكرك</h2>
+
+            <div class="nav">
+                <button id="addUser" type="">اضافة عميل جديد</button>
+                <input type="" name="" value="" placeholder="البحث" />
+            </div>
+
+            <div class="lala">
+                <div class="tabDAD">
+                    <span>رقم</span>
+                    <span>الذهب الي عليه</span>
+                    <span>الاجور الي عليه</span>
+                    <span>التاريخ</span>
+                </div>
+                <main id="main">
+                    <div class="tab">
+                        <span class="user">5</span>
+                        <span class="mony">8923</span>
+                        <span class="gold">534</span>
+                        <span class="time">1444/9/2</span>
+                    </div>
+                    <div class="tab">
+                        <span class="user">4</span>
+                        <span class="mony">8923</span>
+                        <span class="gold">534</span>
+                        <span class="time">1444/9/2</span>
+                    </div>
+                    <div class="tab">
+                        <span class="user">1</span>
+                        <span class="mony">8923</span>
+                        <span class="gold">534</span>
+                        <span class="time">1444/9/2</span>
+                    </div>
+                    <div class="tab">
+                        <span class="user">8</span>
+                        <span class="mony">8923</span>
+                        <span class="gold">534</span>
+                        <span class="time">1444/9/2</span>
+                    </div>
+                </main>
+            </div>
+        </section>
+    </body>
+</html>
