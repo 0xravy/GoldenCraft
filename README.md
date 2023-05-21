@@ -4,7 +4,5 @@
 الملفات كلها قدامك شوف
 
 <a href="https://github.com/aravns/GoldCraftApp/tree/app/dist/scripts">
-<h1>
   ملف
-</h1>
 </a>
