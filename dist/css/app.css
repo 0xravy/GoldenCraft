@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@200&display=swap");
+* {
+  font-family: "Noto Kufi Arabic", sans-serif;
+}
+
+body {
+  background: #1e2124;
+  color: #fff;
+  direction: rtl;
+  padding: 10rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.open {
+  display: flex;
+}
+
+button {
+  padding: 0.51rem;
+  background-color: #424549;
+  color: white;
+  border: none;
+  border-radius: 0.51rem;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #787d84;
+}
+
+.changeName,
+.lolo {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  background-color: #4a4f58;
+  padding: 0.5rem;
+  display: none;
+  gap: 1rem;
+  font-size: 1.5rem;
+  z-index: 20;
+}
+.changeName .bg,
+.lolo .bg {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(3, 3, 3, 0.6470588235);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+.changeName .con,
+.lolo .con {
+  background-color: #27292d;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+.changeName .con input,
+.lolo .con input {
+  font-size: 1.5rem;
+  border: none;
+  background: #36393e;
+  color: white;
+  padding: 0.3rem 1rem;
+  border-radius: 0.4rem;
+  animation: lala 0.5s infinite linear;
+}
+.changeName .con button,
+.lolo .con button {
+  font-size: 1.5rem;
+}
+
+.lolo .con input {
+  width: 10rem;
+}
+
+/*
+ ++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+section {
+  width: 100%;
+  height: 100vh;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+}
+section .nav {
+  width: 60rem;
+  height: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+section .nav button {
+  font-size: 2rem;
+  cursor: pointer;
+}
+section .nav button:hover {
+  background-color: #1e2124;
+  border: 0.1rem solid;
+}
+section .nav input {
+  font-size: 2rem;
+  border: none;
+  background: #36393e;
+  color: white;
+  padding: 0.3rem 1rem;
+  border-radius: 0.4rem;
+  animation: lala 0.5s infinite linear;
+}
+section .lala {
+  width: 60rem;
+  min-height: 50vh;
+  font-size: 1.5rem;
+  /* border: solid grey .3rem; */
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+section .lala .tabDAD {
+  background: #282b30;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: wheat;
+}
+section .lala .tabDAD span {
+  padding: 0 2rem;
+  width: 30%;
+}
+section .lala main .tab {
+  background: #36393e;
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  display: flex;
+  align-items: center;
+  /* transition: all 0.5s linear; */
+}
+section .lala main .tab:hover {
+  background-color: #424549;
+}
+section .lala main .tab span {
+  padding: 0 2rem;
+  width: 30%;
+  cursor: pointer;
+}
+section .lala main .tab .mony {
+  color: greenyellow;
+}
+section .lala main .tab .gold {
+  color: gold;
+}
+section .lala .user-show {
+  background-color: #282b30;
+  position: fixed;
+  transform: translate(-50%, -10%);
+  top: 50%;
+  left: 50%;
+  width: 30rem;
+  height: 25rem;
+  display: none;
+  color: #fff;
+  padding: 0.51rem;
+  border-radius: 0.51rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+}
+section .lala .user-show .close-show {
+  font-size: 2.5rem;
+  color: red;
+  background: none;
+  border: none;
+  position: absolute;
+  right: 0.51rem;
+  top: 0.51rem;
+}
+section .lala .user-show div {
+  display: flex;
+  width: 100%;
+  height: 70%;
+  align-items: center;
+  gap: 1rem;
+}
+section .lala .user-show div button {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+section .lala .user-show .usr {
+  padding: 0 2rem;
+}
+section .lala .user-show .btns {
+  justify-content: space-around;
+}
+section .lala .show {
+  width: 51rem;
+  padding: 2rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .lala .show .more {
+  font-size: 1.5rem;
+}
+@keyframes lala {
+  0%, 100% {
+    outline-offset: 0.8ch;
+  }
+  50% {
+    outline-offset: 0.5ch;
+  }
+}/*# sourceMappingURL=app.css.map */
