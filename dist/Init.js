@@ -11,7 +11,7 @@ class Init {
     main_window;
     constructor() {
         this.main_window = new electron_1.BrowserWindow({
-            wid: 1024,
+            width: 1024,
             height: 800,
             webPreferences: {
                 preload: path_1.default.join(__dirname, "jser.js"),
